@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- taildwind css import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/tailwind.config.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/main.css" />
+</head>
+
+<style>
+    footer {
+        background: url('./assets/image/global/bg-footer.svg') no-repeat center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-pc">
+            <div class="wrapper flex justify-between">
+                <a href="" class="logo-header">
+                    <figure>
+                        <img src="./assets/image/global/logo-header.svg" alt="">
+                    </figure>
+                </a>
+                <a href="" class="logo-header-fixed ">
+                    <img src="./assets/image/global/logo-header-fixed.svg" alt="">
+                </a>
+                <nav class="py-[28px]">
+                    <ul class="flex gap-7 items-center menu-pc-ul">
+                        <li><a href="" class="text-heading-h10-semibold text-white">Về chúng tôi</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Tin tức - Sự kiện</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Dịch vụ</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Đánh giá năng lực số</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Khóa học</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Đội ngũ chuyên gia</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Thư viện số</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Liên hệ</a></li>
+
+
+                        <!-- tìm kiếm -->
+                        <li class="cursor-pointer relative">
+                            <p>
+                            <figure class="icon-find-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M22.5 22.5L18.4168 18.4167M21.3333 11.4167C21.3333 16.8935 16.8935 21.3333 11.4167 21.3333C5.93984 21.3333 1.5 16.8935 1.5 11.4167C1.5 5.93984 5.93984 1.5 11.4167 1.5C16.8935 1.5 21.3333 5.93984 21.3333 11.4167Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </figure>
+                            <input type="text" placeholder="Tìm kiếm..."
+                                class="bg-white outline-none text-white p-4 rounded-lg hidden">
+                            </p>
+                        </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <style>
+            .navigation-home-banner .swiper-button-next,
+            .navigation-home-banner .swiper-button-prev {
+                background: white;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .navigation-home-banner svg {
+                width: 24px;
+            }
+        </style>
+        <section class="section-1-homepage">
+            <div class="swiper swiper-homepage-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/image/home/back-banner.png" alt="">
+                        <div class="absolute left-[92px] bottom-[0] text-white ">
+                            <div class="flex items-center  ">
+                                <div class="left max-w-[650px]">
+                                    <div class="flex flex-col justify-between h-full lg:min-h-[501px]">
+                                        <div class="top">
+                                            <h2 class="text-heading-h2-semibold text-white">
+                                                Phát triển Nhân lực số
+                                                <br>Dẫn đầu kỷ nguyên số
+                                            </h2>
+                                            <p class="text-heading-h10-semibold mt-1">
+                                                Kết nối – Đào tạo – Chuyển đổi – Sáng tạo
+                                            </p>
+                                            <a href="" class="button-cus-vidicc mt-10">
+                                                Tìm hiểu thêm
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center mt-10 gap-4 min-h-12 navigation-home-banner">
+                                            <div class="relative left-0 swiper-button-prev " tabindex="0" role="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.5303 18.5303C10.2374 18.8232 9.76256 18.8232 9.46967 18.5303L3.46967 12.5303C3.17678 12.2374 3.17678 11.7626 3.46967 11.4697L9.46967 5.46967C9.76256 5.17678 10.2374 5.17678 10.5303 5.46967C10.8232 5.76256 10.8232 6.23744 10.5303 6.53033L5.81066 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L5.81066 12.75L10.5303 17.4697C10.8232 17.7626 10.8232 18.2374 10.5303 18.5303Z"
+                                                        fill="#112722" />
+                                                </svg>
+                                            </div>
+                                            <div class="relative right-0 swiper-button-next" tabindex="0" role="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.4697 18.5303C13.7626 18.8232 14.2374 18.8232 14.5303 18.5303L20.5303 12.5303C20.8232 12.2374 20.8232 11.7626 20.5303 11.4697L14.5303 5.46967C14.2374 5.17678 13.7626 5.17678 13.4697 5.46967C13.1768 5.76256 13.1768 6.23744 13.4697 6.53033L18.1893 11.25L4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75L18.1893 12.75L13.4697 17.4697C13.1768 17.7626 13.1768 18.2374 13.4697 18.5303Z"
+                                                        fill="#112722" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="./assets/image/home/human-banner.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/image/home/back-banner.png" alt="">
+                        <div class="absolute left-[92px] bottom-[0] text-white ">
+                            <div class="flex items-center  ">
+                                <div class="left max-w-[650px]">
+                                    <div class="flex flex-col justify-between h-full lg:min-h-[501px]">
+                                        <div class="top">
+                                            <h2 class="text-heading-h2-semibold text-white">
+                                                Phát triển Nhân lực số
+                                                <br>Dẫn đầu kỷ nguyên số
+                                            </h2>
+                                            <p class="text-heading-h10-semibold mt-1">
+                                                Kết nối – Đào tạo – Chuyển đổi – Sáng tạo
+                                            </p>
+                                            <a href="" class="button-cus-vidicc mt-10">
+                                                Tìm hiểu thêm
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center mt-10 gap-4 min-h-12 navigation-home-banner">
+                                            <div class="relative left-0 swiper-button-prev " tabindex="0" role="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.5303 18.5303C10.2374 18.8232 9.76256 18.8232 9.46967 18.5303L3.46967 12.5303C3.17678 12.2374 3.17678 11.7626 3.46967 11.4697L9.46967 5.46967C9.76256 5.17678 10.2374 5.17678 10.5303 5.46967C10.8232 5.76256 10.8232 6.23744 10.5303 6.53033L5.81066 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L5.81066 12.75L10.5303 17.4697C10.8232 17.7626 10.8232 18.2374 10.5303 18.5303Z"
+                                                        fill="#112722" />
+                                                </svg>
+                                            </div>
+                                            <div class="relative right-0 swiper-button-next" tabindex="0" role="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.4697 18.5303C13.7626 18.8232 14.2374 18.8232 14.5303 18.5303L20.5303 12.5303C20.8232 12.2374 20.8232 11.7626 20.5303 11.4697L14.5303 5.46967C14.2374 5.17678 13.7626 5.17678 13.4697 5.46967C13.1768 5.76256 13.1768 6.23744 13.4697 6.53033L18.1893 11.25L4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75L18.1893 12.75L13.4697 17.4697C13.1768 17.7626 13.1768 18.2374 13.4697 18.5303Z"
+                                                        fill="#112722" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="./assets/image/home/human-banner.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </section>
+
+
+        <section class="section-2-homepage">
+            <div class="container py-10 lg:pt-[100px] lg:pb-[80px]">
+                <h5 class="text-title-gradient w-fit mx-auto">GIỚI THIỆU CHUNG</h5>
+                <h2 class="text-heading-h3-bold text-primary-2 text-center mt-2">
+                    Trung tâm Phát triển Nhân lực số Việt Nam
+                </h2>
+                <div class="text-body-lg-regular text-center text-neutralc-800 max-w-[850px] mx-auto mt-6">
+                    Là tổ chức có tư cách pháp nhân thuộc Hiệp hội Khoa học hành chính Việt Nam, hoạt động trong lĩnh
+                    vực nghiên cứu khoa học, công nghệ, dự báo, tư vấn chính sách và tổ chức bồi dưỡng phát triển nhân
+                    lực số, đảm bảo nguyên tắc không vì mục tiêu lợi nhuận trong quá trình tổ chức và hoạt động.
+                </div>
+
+                <figure class="overflow-hidden rounded-lg my-10 lg:my-[56px]">
+                    <img class="min-w-full aspect-[1440/491]" src="./assets/image/home/img-ss2.png" alt="">
+                </figure>
+                <a href="" class="button-cus-vidicc flex justify-center w-fit mx-auto">
+                    Tìm hiểu thêm
+                </a>
+            </div>
+        </section>
+        <style>
+            .swiper-pagination.custom {
+                position: absolute;
+                bottom: 12px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 8px;
+                border-radius: 999px;
+                width: fit-content;
+            }
+        </style>
+        <section class="section-3-homepage pt-10 lg:pt-[80px]">
+            <div class="container">
+                <h5 class="text-title-gradient w-fit mx-auto">NHIỆM VỤ CỦA CHÚNG TÔI</h5>
+                <h2 class="text-heading-h3-bold text-primary-2 text-center mt-2">
+                    Chắp cánh cho Nhân lực số Việt Nam
+                </h2>
+            </div>
+            <div class="list-box-mission-homepage mt-10 lg:mt-[64px]">
+                <div class="swiper swiper-mission-homepage pb-[4rem] md:pb-0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <div class="box-mission-homepage relative ">
+                                <img class="aspect-[384/606]" src="./assets/image/home/img-mission.png" alt="">
+                                <div class="text-absolute absolute top-10 left-10 right-10 max-w-[288px] z-[1]">
+                                    <span class="text-body-md-bold text-white">01</span>
+                                    <p class="text-heading-h7-bold text-white mt-2">
+                                        Nghiên cứu, khảo sát, đánh giá về nhân lực số
+                                    </p>
+                                </div>
+                                <div class="absolute inset-0 text-layer ">
+                                    <a href="" class="button-cus-vidicc absolute  bottom-10">
+                                        Tìm hiểu thêm
+                                    </a>
+                                </div>
+                                <figure class="absolute icon-layer right-[-33%] top-[-20%]">
+                                    <img class="aspect-[373/341]" src="./assets/image/home/layer-mission.svg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-mission-homepage relative ">
+                                <img class="aspect-[384/606]" src="./assets/image/home/img-mission.png" alt="">
+                                <div class="text-absolute absolute top-10 left-10 right-10 max-w-[288px] z-[1]">
+                                    <span class="text-body-md-bold text-white">01</span>
+                                    <p class="text-heading-h7-bold text-white mt-2">
+                                        Nghiên cứu, khảo sát, đánh giá về nhân lực số
+                                    </p>
+                                </div>
+                                <div class="absolute inset-0 text-layer ">
+                                    <a href="" class="button-cus-vidicc absolute  bottom-10">
+                                        Tìm hiểu thêm
+                                    </a>
+                                </div>
+                                <figure class="absolute icon-layer right-[-33%] top-[-20%]">
+                                    <img class="aspect-[373/341]" src="./assets/image/home/layer-mission.svg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-mission-homepage relative ">
+                                <img class="aspect-[384/606]" src="./assets/image/home/img-mission.png" alt="">
+                                <div class="text-absolute absolute top-10 left-10 right-10 max-w-[288px] z-[1]">
+                                    <span class="text-body-md-bold text-white">01</span>
+                                    <p class="text-heading-h7-bold text-white mt-2">
+                                        Nghiên cứu, khảo sát, đánh giá về nhân lực số
+                                    </p>
+                                </div>
+                                <div class="absolute inset-0 text-layer ">
+                                    <a href="" class="button-cus-vidicc absolute  bottom-10">
+                                        Tìm hiểu thêm
+                                    </a>
+                                </div>
+                                <figure class="absolute icon-layer right-[-33%] top-[-20%]">
+                                    <img class="aspect-[373/341]" src="./assets/image/home/layer-mission.svg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-mission-homepage relative ">
+                                <img class="aspect-[384/606]" src="./assets/image/home/img-mission.png" alt="">
+                                <div class="text-absolute absolute top-10 left-10 right-10 max-w-[288px] z-[1]">
+                                    <span class="text-body-md-bold text-white">01</span>
+                                    <p class="text-heading-h7-bold text-white mt-2">
+                                        Nghiên cứu, khảo sát, đánh giá về nhân lực số
+                                    </p>
+                                </div>
+                                <div class="absolute inset-0 text-layer ">
+                                    <a href="" class="button-cus-vidicc absolute  bottom-10">
+                                        Tìm hiểu thêm
+                                    </a>
+                                </div>
+                                <figure class="absolute icon-layer right-[-33%] top-[-20%]">
+                                    <img class="aspect-[373/341]" src="./assets/image/home/layer-mission.svg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-mission-homepage relative ">
+                                <img class="aspect-[384/606]" src="./assets/image/home/img-mission.png" alt="">
+                                <div class="text-absolute absolute top-10 left-10 right-10 max-w-[288px] z-[1]">
+                                    <span class="text-body-md-bold text-white">01</span>
+                                    <p class="text-heading-h7-bold text-white mt-2">
+                                        Nghiên cứu, khảo sát, đánh giá về nhân lực số
+                                    </p>
+                                </div>
+                                <div class="absolute inset-0 text-layer ">
+                                    <a href="" class="button-cus-vidicc absolute  bottom-10">
+                                        Tìm hiểu thêm
+                                    </a>
+                                </div>
+                                <figure class="absolute icon-layer right-[-33%] top-[-20%]">
+                                    <img class="aspect-[373/341]" src="./assets/image/home/layer-mission.svg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination custom"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <style>
+            /* CSS để tạo hiệu ứng cho swiper */
+            .swiper-news-home {
+                overflow: visible;
+            }
+
+            .swiper-news-home .swiper-wrapper {
+                overflow: visible;
+            }
+
+            /* Thiết lập để hiển thị 2.5 slide */
+            .swiper-news-home .swiper-slide {
+                width: calc(50% - 10px) !important;
+                /* Mỗi slide chiếm 50% trừ đi gap */
+                margin-right: 40px;
+            }
+
+            .swiper-news-home .swiper-scrollbar-drag {
+                background: var(--primary);
+            }
+
+            .swiper-news-home .swiper-scrollbar {
+                background: var(--neutralc-100);
+            }
+
+            .swiper-news-home .swiper-slide:nth-child(3) .box-news {
+                position: relative;
+                z-index: 0;
+            }
+
+
+
+            .swiper-news-home .swiper-button-next,
+            .swiper-news-home .swiper-button-prev {
+                background: var(--gradient-1);
+                padding: 1rem;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 4px 0 rgba(81, 81, 81, 0.25);
+                top: 32%;
+
+            }
+
+            .navigation-news-home svg {
+                width: 24px;
+            }
+
+
+
+            .swiper-news-home .swiper-button-prev {
+                left: -10%;
+                right: auto;
+            }
+
+            .swiper-news-home .swiper-button-next {
+                left: auto;
+                right: -10%;
+            }
+        </style>
+        <section class="section-4-homepage py-10 lg:py-[120px]">
+            <div class="container">
+                <h5 class="text-title-gradient w-fit">TIN TỨC - SỰ KIỆN</h5>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-heading-h3-bold text-primary-2">
+                        Dòng chảy tin tức
+                    </h2>
+                    <a href="" class="button-cus-vidicc">
+                        Xem tất cả
+                    </a>
+                </div>
+                <div class="list-tab flex gap-6 mt-6">
+                    <div class="tab-item active" data-tab="all">
+                        Tất cả
+                    </div>
+                    <div class="tab-item" data-tab="2">
+                        tab 2
+                    </div>
+                </div>
+                <div class="list-tab-content mt-10">
+                    <div class="tab-content active" data-tab-content="all">
+                        <div class="swiper swiper-news-home overflow-visible lg:pb-[56px]">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="box-news homepage flex flex-col gap-8 items-start">
+                                        <div class="top flex flex-col lg:flex-row gap-5 lg:gap-[56px]">
+                                            <div class="left flex flex-col gap-2 items-center justify-center">
+                                                <div class="date-custom">17</div>
+                                                <span class="text-heading-h10-bold text-primary">9.2025</span>
+                                            </div>
+                                            <div class="right max-w-[536px] flex flex-col gap-4">
+                                                <div
+                                                    class="py-1 px-6 rounded-full border border-solid border-neutralc-900 text-body-sm-bold text-neutralc-900 w-fit">
+                                                    Sự kiện
+                                                </div>
+                                                <h3 class="text-heading-h10-bold text-neutralc-900">
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                </h3>
+                                                <a href="" class="link-primary text-body-md-bold w-fit">
+                                                    Chi tiết
+                                                    <figure class="w-6 h-6 inline-block ml-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                                                fill="#036799" />
+                                                        </svg>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <figure class="overflow-hidden rounded-lg">
+                                                <img class="aspect-[700/335]" src="./assets/image/home/img-news.png"
+                                                    alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box-news homepage flex flex-col gap-8 items-start">
+                                        <div class="top flex flex-col lg:flex-row gap-5 lg:gap-[56px]">
+                                            <div class="left flex flex-col gap-2 items-center justify-center">
+                                                <div class="date-custom">17</div>
+                                                <span class="text-heading-h10-bold text-primary">9.2025</span>
+                                            </div>
+                                            <div class="right max-w-[536px] flex flex-col gap-4">
+                                                <div
+                                                    class="py-1 px-6 rounded-full border border-solid border-neutralc-900 text-body-sm-bold text-neutralc-900 w-fit">
+                                                    Sự kiện
+                                                </div>
+                                                <h3 class="text-heading-h10-bold text-neutralc-900">
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                </h3>
+                                                <a href="" class="link-primary text-body-md-bold w-fit">
+                                                    Chi tiết
+                                                    <figure class="w-6 h-6 inline-block ml-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                                                fill="#036799" />
+                                                        </svg>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <figure class="overflow-hidden rounded-lg">
+                                                <img class="aspect-[700/335]" src="./assets/image/home/img-news.png"
+                                                    alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box-news homepage flex flex-col gap-8 items-start">
+                                        <div class="top flex flex-col lg:flex-row gap-5 lg:gap-[56px]">
+                                            <div class="left flex flex-col gap-2 items-center justify-center">
+                                                <div class="date-custom">17</div>
+                                                <span class="text-heading-h10-bold text-primary">9.2025</span>
+                                            </div>
+                                            <div class="right max-w-[536px] flex flex-col gap-4">
+                                                <div
+                                                    class="py-1 px-6 rounded-full border border-solid border-neutralc-900 text-body-sm-bold text-neutralc-900 w-fit">
+                                                    Sự kiện
+                                                </div>
+                                                <h3 class="text-heading-h10-bold text-neutralc-900">
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                </h3>
+                                                <a href="" class="link-primary text-body-md-bold w-fit">
+                                                    Chi tiết
+                                                    <figure class="w-6 h-6 inline-block ml-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                                                fill="#036799" />
+                                                        </svg>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <figure class="overflow-hidden rounded-lg">
+                                                <img class="aspect-[700/335]" src="./assets/image/home/img-news.png"
+                                                    alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box-news homepage flex flex-col gap-8 items-start">
+                                        <div class="top flex flex-col lg:flex-row gap-5 lg:gap-[56px]">
+                                            <div class="left flex flex-col gap-2 items-center justify-center">
+                                                <div class="date-custom">17</div>
+                                                <span class="text-heading-h10-bold text-primary">9.2025</span>
+                                            </div>
+                                            <div class="right max-w-[536px] flex flex-col gap-4">
+                                                <div
+                                                    class="py-1 px-6 rounded-full border border-solid border-neutralc-900 text-body-sm-bold text-neutralc-900 w-fit">
+                                                    Sự kiện
+                                                </div>
+                                                <h3 class="text-heading-h10-bold text-neutralc-900">
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                    Nghiên cứu và dự báo, tư vấn chính sách về phát triển nhân lực số
+                                                </h3>
+                                                <a href="" class="link-primary text-body-md-bold w-fit">
+                                                    Chi tiết
+                                                    <figure class="w-6 h-6 inline-block ml-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                                                fill="#036799" />
+                                                        </svg>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <figure class="overflow-hidden rounded-lg">
+                                                <img class="aspect-[700/335]" src="./assets/image/home/img-news.png"
+                                                    alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-scrollbar js-swiper-scrollbar !w-[274px] !h-1.5 !left-1/2 !translate-x-[-50%]">
+                            </div>
+
+                            <div class=" swiper-button-prev rotate-180 !hidden " tabindex="0" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.4697 0.46967C10.7626 0.176777 11.2374 0.176777 11.5303 0.46967L17.5303 6.46967C17.8232 6.76256 17.8232 7.23744 17.5303 7.53033L11.5303 13.5303C11.2374 13.8232 10.7626 13.8232 10.4697 13.5303C10.1768 13.2374 10.1768 12.7626 10.4697 12.4697L15.1893 7.75H1C0.585786 7.75 0.25 7.41421 0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H15.1893L10.4697 1.53033C10.1768 1.23744 10.1768 0.762563 10.4697 0.46967Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class=" swiper-button-next" tabindex="0" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.4697 0.46967C10.7626 0.176777 11.2374 0.176777 11.5303 0.46967L17.5303 6.46967C17.8232 6.76256 17.8232 7.23744 17.5303 7.53033L11.5303 13.5303C11.2374 13.8232 10.7626 13.8232 10.4697 13.5303C10.1768 13.2374 10.1768 12.7626 10.4697 12.4697L15.1893 7.75H1C0.585786 7.75 0.25 7.41421 0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H15.1893L10.4697 1.53033C10.1768 1.23744 10.1768 0.762563 10.4697 0.46967Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-tab-content="2">
+                        Tab 2
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <style>
+            .swiper-san-pham-so .swiper-slide {
+                width: calc(50% - 10px) !important;
+                margin-right: 40px;
+            }
+
+            .swiper-san-pham-so .swiper-scrollbar-drag {
+                background: var(--primary);
+            }
+
+            .swiper-san-pham-so .swiper-scrollbar {
+                background: var(--neutralc-100);
+            }
+
+            .section-5-homepage {
+                width: 100%;
+                height: 940px;
+                background: url('./assets/image/home/back-sps.svg') no-repeat center;
+                background-size: cover;
+            }
+
+            .navigation-san-pham-so .swiper-button-next,
+            .navigation-san-pham-so .swiper-button-prev {
+                background: white;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    background: var(--primary);
+
+                    svg path {
+                        fill: white;
+                    }
+                }
+            }
+
+            .navigation-san-pham-so svg {
+                width: 24px;
+            }
+
+            .box-san-pham-so::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(2deg, #020C00 24.9%, rgba(2, 12, 0, 0.00) 98.89%);
+                z-index: 1;
+                opacity: 0.8;
+            }
+
+            /* .box-san-pham-so {
+                position: relative;
+                overflow: hidden;
+                border: 1px solid transparent;
+                border-image: conic-gradient(from 0deg,
+                        rgba(255, 255, 255, 0) 0deg,
+                        rgba(255, 255, 255, 0.6) 90deg,
+                        rgba(255, 255, 255, 0) 180deg,
+                        rgba(255, 255, 255, 0.6) 270deg,
+                        rgba(255, 255, 255, 0) 360deg) 1;
+            } */
+
+            .box-san-pham-so::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border: 2px solid transparent;
+                border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 1;
+                pointer-events: none;
+            }
+
+            .swiper-san-pham-so {
+                position: relative;
+                overflow: visible;
+                clip-path: inset(0 -300px 0 0 round 0);
+            }
+        </style>
+
+        <section class="section-5-homepage">
+            <div class="container py-10 lg:py-[150px]">
+                <div class="flex">
+                    <div class="left max-w-[525px] relative">
+                        <div class="flex flex-col justify-between h-full lg:min-h-[501px]">
+                            <div class="top">
+                                <h5 class="text-title-gradient w-fit">SẢN PHẨM SỐ</h5>
+                                <p class="text-heading-h3-bold text-white mt-1">
+                                    Giải pháp công nghệ và nền tảng số phục vụ
+                                    phát triển nhân lực số
+                                </p>
+                                <a href="" class="button-cus-vidicc mt-5 lg:mt-[56px]">
+                                    Xem tất cả
+                                </a>
+                            </div>
+                            <div class="flex items-center mt-10 gap-4 min-h-12 navigation-san-pham-so">
+                                <div class="relative left-0 swiper-button-prev " tabindex="0" role="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.5303 18.5303C10.2374 18.8232 9.76256 18.8232 9.46967 18.5303L3.46967 12.5303C3.17678 12.2374 3.17678 11.7626 3.46967 11.4697L9.46967 5.46967C9.76256 5.17678 10.2374 5.17678 10.5303 5.46967C10.8232 5.76256 10.8232 6.23744 10.5303 6.53033L5.81066 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L5.81066 12.75L10.5303 17.4697C10.8232 17.7626 10.8232 18.2374 10.5303 18.5303Z"
+                                            fill="#112722" />
+                                    </svg>
+                                </div>
+                                <div class="relative right-0 swiper-button-next" tabindex="0" role="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.4697 18.5303C13.7626 18.8232 14.2374 18.8232 14.5303 18.5303L20.5303 12.5303C20.8232 12.2374 20.8232 11.7626 20.5303 11.4697L14.5303 5.46967C14.2374 5.17678 13.7626 5.17678 13.4697 5.46967C13.1768 5.76256 13.1768 6.23744 13.4697 6.53033L18.1893 11.25L4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75L18.1893 12.75L13.4697 17.4697C13.1768 17.7626 13.1768 18.2374 13.4697 18.5303Z"
+                                            fill="#112722" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right pl-10 pb-10  ">
+                        <div class="swiper swiper-san-pham-so ">
+                            <div class="swiper-wrapper lg:pb-[72px]">
+                                <div class="swiper-slide">
+                                    <div class="box-san-pham-so">
+                                        <figure class="overflow-hidden rounded-lg">
+                                            <img class="aspect-[404/526]" src="./assets/image/home/img-sp1.png" alt="">
+                                            <figcaption class="text-layer absolute bottom-10 z-[2]">
+                                                <h3 class="text-heading-h9-bold text-white">
+                                                    Nền tảng Đánh giá Năng lực số
+                                                </h3>
+                                                <p class="text-body-lg-regular text-white mt-2 max-w-[356px]">
+                                                    Giúp tổ chức và cá nhân đo lường, phân tích năng lực số theo chuẩn
+                                                    quốc tế. Tích hợp báo cáo trực quan, đề xuất lộ trình phát triển kỹ
+                                                    năng số.
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box-san-pham-so">
+                                        <figure class="overflow-hidden rounded-lg">
+                                            <img class="aspect-[404/526]" src="./assets/image/home/img-sp1.png" alt="">
+                                            <figcaption class="text-layer absolute bottom-10 z-[2]">
+                                                <h3 class="text-heading-h9-bold text-white">
+                                                    Nền tảng Đánh giá Năng lực số
+                                                </h3>
+                                                <p class="text-body-lg-regular text-white mt-2 max-w-[356px]">
+                                                    Giúp tổ chức và cá nhân đo lường, phân tích năng lực số theo chuẩn
+                                                    quốc tế. Tích hợp báo cáo trực quan, đề xuất lộ trình phát triển kỹ
+                                                    năng số.
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="box-san-pham-so">
+                                        <figure class="overflow-hidden rounded-lg">
+                                            <img class="aspect-[404/526]" src="./assets/image/home/img-sp1.png" alt="">
+                                            <figcaption class="text-layer absolute bottom-10 z-[2]">
+                                                <h3 class="text-heading-h9-bold text-white">
+                                                    Nền tảng Đánh giá Năng lực số
+                                                </h3>
+                                                <p class="text-body-lg-regular text-white mt-2 max-w-[356px]">
+                                                    Giúp tổ chức và cá nhân đo lường, phân tích năng lực số theo chuẩn
+                                                    quốc tế. Tích hợp báo cáo trực quan, đề xuất lộ trình phát triển kỹ
+                                                    năng số.
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-scrollbar js-swiper-scrollbar-sps !w-full !h-1.5 !left-1/2 !translate-x-[-50%]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .swiper-partner .swiper-slide {
+                width: 256px !important;
+            }
+        </style>
+        <section class="section-6-home-page py-10 lg:py-[150px]">
+            <div class="container">
+                <h5 class="text-title-gradient w-fit mx-auto">
+                    ĐỐI TÁC
+                </h5>
+                <h3 class="text-heading-h3-bold text-primary text-center">Hợp tác để phát triển nhân lực số bền vững
+                </h3>
+            </div>
+
+            <div class="swiper swiper-partner mt-10 lg:mt-[72px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="overflow-hidden rounded-lg">
+                            <img class="aspect-[256/145]" src="./assets/image/home/partner.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div
+            class="container w-full 2xl:max-w-[1740px] wrapper  px-5 pt-10 pb-6 lg:px-[92px] lg:pt-[64px] lg:pb-[24px]">
+            <div class="flex min-h-[272px] justify-between">
+                <!-- cols 1 -->
+                <div class="flex flex-col justify-between">
+                    <a href="" class="min-w-full">
+                        <img class="aspect-[338/92]" src="./assets/image/global/logo-header.svg" alt="">
+                    </a>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-body-lg-regular text-white">Cơ quan chủ quản:</span>
+                        <a href=""
+                            class="text-body-lg-semibold text-white underline underline-offset-4 link-footer flex items-center gap-2">
+                            <figure>
+                                <img class="aspect-[48/48]" src="./assets/image/global/icon-f.png" alt="">
+                            </figure>
+                            Hiệp hội Khoa học Hành chính Việt Nam
+                        </a>
+                    </div>
+                </div>
+                <!-- cols 2 -->
+                <div class="flex flex-col gap-6">
+                    <h5 class="title-f">thông tin liên hệ</h5>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">Trụ sở</span>
+                        <br>
+                        <a href="" class="text-heading-h10-regular text-white link-footer">684 Lạc Long Quân, phường
+                            Tây
+                            hồ, Hà
+                            Nội</a>
+                    </p>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">WEBSITE</span>
+                        <br>
+                        <a href="https://www.vidicc.com"
+                            class="text-heading-h10-regular text-white link-footer">www.vidicc.com</a>
+                    </p>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">EMAIL</span>
+                        <br>
+                        <a href="mailto:02423456789"
+                            class="text-heading-h10-regular text-white link-footer">02423456789</a>
+                    </p>
+                </div>
+                <!-- cols 3 -->
+                <div class="flex flex-col gap-6">
+                    <h5 class="title-f">Hỗ trợ khách hàng</h5>
+                    <div class="flex gap-7">
+                        <ul class="flex flex-col gap-3 min-w-[225px]">
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Về chúng tôi</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Tin tức -
+                                    Sự kiện</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Dịch vụ</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Đánh giá năng
+                                    lực số</a></li>
+                        </ul>
+
+                        <ul class="flex flex-col gap-3  min-w-[225px]">
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Khóa học</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Đội ngũ chuyên
+                                    gia</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Thư viện số</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- cols 4 -->
+                <div class="flex flex-col gap-6 items-end">
+                    <h5 class="title-f">Hỗ trợ khách hàng</h5>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="" class="text-body-lg-regular text-white link-footer">Hướng dẫn</a></li>
+                        <li><a href="" class="text-body-lg-regular text-white link-footer">Chính sách</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line w-full h-[1px] bg-white opacity-20 lg:mt-12"></div>
+            <div class="copyright">
+                <p class="text-body-lg-regular  text-center pt-[16px] text-white">2025 © Bản quyền thuộc về Trung
+                    tâm
+                    Phát triển Nhân lực số Việt Nam</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer>
+        var swiper = new Swiper('.swiper-homepage-banner', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+
+        var swiperMission = new Swiper('.swiper-mission-homepage', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                1280: {
+                    slidesPerView: 4,
+                },
+                1440: {
+                    slidesPerView: 5,
+                    spaceBetween: 0
+                },
+
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            pagination: {
+                el: '.swiper-pagination.custom',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+
+        var swiperNews = new Swiper('.swiper-news-home', {
+            slidesPerView: 2.3,
+            autoplay: true,
+            loop: true,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            freeMode: true,
+            scrollbar: {
+                el: '.js-swiper-scrollbar',
+                draggable: false,
+                dragSize: 90,
+            }
+        });
+
+        var swiperSanPhamSo = new Swiper('.swiper-san-pham-so', {
+            slidesPerView: 2.3,
+            autoplay: true,
+            loop: true,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: '.navigation-san-pham-so .swiper-button-next',
+                prevEl: '.navigation-san-pham-so .swiper-button-prev',
+            },
+            freeMode: true,
+            scrollbar: {
+                el: '.js-swiper-scrollbar-sps',
+                draggable: false,
+                dragSize: 309,
+            }
+        });
+
+
+        const swiperPartner = new Swiper(".swiper-partner", {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            loop: true,
+            freeMode: true,
+            // tắt người dùng grab chuột để kéo
+            allowTouchMove: false,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 4000,
+        });
+
+        function updateSlideOpacity() {
+            // handle multiple swiper instances
+            [swiperNews, swiperSanPhamSo].forEach(swiper => {
+                if (!swiper || !swiper.el) return;
+
+                // remove opacity from all slides first
+                const allSlides = Array.from(swiper.slides || []);
+                allSlides.forEach(s => s.classList.remove('opacity-30'));
+
+                // get original (non-duplicate) slides to compute target index
+                const realSlides = Array.from(swiper.el.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)'));
+                if (!realSlides.length) return;
+
+                // target is the slide after the first two visible slides
+                const targetRealIndex = (swiper.realIndex + 2) % realSlides.length;
+
+                // add opacity class to any DOM slide (including clones) that represents the target real index
+                allSlides
+                    .filter(s => s.hasAttribute('data-swiper-slide-index') && Number(s.getAttribute('data-swiper-slide-index')) === targetRealIndex)
+                    .forEach(s => s.classList.add('opacity-30'));
+            });
+        }
+
+
+        function togglePrevBtnOnNext() {
+            if (!swiperNews || !swiperNews.el) return;
+
+            // select the prev button inside the news swiper
+            const prevBtn = swiperNews.el.querySelector('.swiper-button-prev');
+            if (!prevBtn) return;
+
+            // ensure it's hidden initially
+            prevBtn.classList.add('hidden', '!hidden');
+
+            // when user moves to next slide -> show the button
+            swiperNews.on('slideNextTransitionStart', () => {
+                prevBtn.classList.remove('hidden', '!hidden');
+            });
+
+            // when user moves to previous slide -> hide the button
+            swiperNews.on('slidePrevTransitionStart', () => {
+                prevBtn.classList.add('hidden', '!hidden');
+            });
+
+            // sync state on init/slideChange (hide if at first slide)
+            swiperNews.on('init slideChange', () => {
+                if (swiperNews.realIndex === 0) {
+                    prevBtn.classList.add('hidden', '!hidden');
+                } else {
+                    prevBtn.classList.remove('hidden', '!hidden');
+                }
+            });
+        }
+
+
+        // Gọi hàm khi khởi tạo Swiper và khi slide thay đổi
+        if (swiperNews) {
+            swiperNews.on('init slideChange', updateSlideOpacity);
+        }
+        if (swiperSanPhamSo) {
+            swiperSanPhamSo.on('init slideChange', updateSlideOpacity);
+        }
+
+        // ensure inits (match existing pattern)
+        if (swiperNews && swiperNews.init) swiperNews.init();
+        if (swiperSanPhamSo && swiperSanPhamSo.init) swiperSanPhamSo.init();
+        togglePrevBtnOnNext();
+
+        // khi scroll xuống thì thêm class header-fixed
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header-pc');
+            if (window.scrollY > 0) {
+                header.classList.add('header-fixed');
+            } else {
+                header.classList.remove('header-fixed');
+            }
+        });
+
+
+        // code chuyển tab
+        const tabItems = $('.tab-item');
+        const tabContents = $('.tab-content');
+        tabItems.on('click', function () {
+            const tabId = $(this).data('tab');
+
+            tabItems.removeClass('active');
+            $(this).addClass('active');
+
+            tabContents.removeClass('active');
+            $(`.tab-content[data-tab-content="${tabId}"]`).addClass('active');
+        });
+    </script>
+</body>
+
+</html>
