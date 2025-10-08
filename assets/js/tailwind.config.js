@@ -15,7 +15,7 @@ tailwind.config = {
                 maxWidth: '1920px',
                 padding: {
                     DEFAULT: '24px',
-                    '3xl': '40px',
+                    '3xl': '0px',
                     '2xl': '32px',
                     xl: '32px',
                     lg: '24px',
