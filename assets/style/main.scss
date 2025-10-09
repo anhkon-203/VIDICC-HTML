@@ -929,6 +929,25 @@ a {
       }
     }
   }
+  &.link-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--neutralc-900);
+    color: var(--neutralc-900);
+    width: fit-content;
+    &:hover {
+      text-decoration-color: #e88f26;
+      background: var(--gradient-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      svg {
+        path {
+          fill: #e88f26;
+        }
+      }
+    }
+  }
+
   &.link-secondary {
     color: var(--secondary);
     &:hover {
@@ -2467,7 +2486,6 @@ hr {
     a {
       @extend .text-body-md-regular;
       color: #0f0f0f;
-      
     }
     &.active {
       background: var(--primary);
@@ -2495,7 +2513,46 @@ hr {
         }
       }
     }
+  }
+}
 
+.breadcrumb-detail {
+  .link-breadcrumb {
+    @extend .text-body-lg-semibold;
+    &:hover {
+      background: var(--gradient-1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      svg {
+        path {
+          fill: #e88f26;
+        }
+      }
+    }
+  }
+}
+
+.link-social {
+  .icon-social,
+  .icon-copy {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    background: #eaedf3;
+    svg {
+      width: 24px;
+      height: 24px;
+      path {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      background: var(--gradient-1);
+    }
   }
 }
 

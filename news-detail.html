@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Event</title>
+    <!-- taildwind css import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/tailwind.config.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/main.css" />
+</head>
+
+<style>
+    footer {
+        background: url('./assets/image/global/bg-footer.svg') no-repeat center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-pc header-fixed">
+            <div class="wrapper flex justify-between">
+                <a href="" class="logo-header">
+                    <figure>
+                        <img src="./assets/image/global/logo-header.svg" alt="">
+                    </figure>
+                </a>
+                <a href="" class="logo-header-fixed ">
+                    <img src="./assets/image/global/logo-header-fixed.svg" alt="">
+                </a>
+                <nav class="py-[28px]">
+                    <ul class="flex gap-7 items-center menu-pc-ul">
+                        <li><a href="" class="text-heading-h10-semibold text-white">Về chúng tôi</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Tin tức - Sự kiện</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Dịch vụ</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Đánh giá năng lực số</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Khóa học</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Đội ngũ chuyên gia</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Thư viện số</a></li>
+                        <li><a href="" class="text-heading-h10-semibold text-white">Liên hệ</a></li>
+                        <!-- tìm kiếm -->
+                        <li class="cursor-pointer relative">
+                            <p>
+                            <figure class="icon-find-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M22.5 22.5L18.4168 18.4167M21.3333 11.4167C21.3333 16.8935 16.8935 21.3333 11.4167 21.3333C5.93984 21.3333 1.5 16.8935 1.5 11.4167C1.5 5.93984 5.93984 1.5 11.4167 1.5C16.8935 1.5 21.3333 5.93984 21.3333 11.4167Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </figure>
+                            <input type="text" placeholder="Tìm kiếm..."
+                                class="bg-white outline-none text-white p-4 rounded-lg hidden">
+                            </p>
+                        </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <style>
+            .content-center .content img {
+                margin: 48px 0;
+                border-radius: 12px;
+                aspect-ratio: 888/473;
+                width: 100%;
+            }
+        </style>
+        <section class="section-news-detail py-10 lg:pt-[177px] lg:pb-[100px]">
+            <div class="container">
+                <div class="breadcrumb-detail">
+                    <ul class="flex gap-2">
+                        <li>
+                            <a href="" class=" link-breadcrumb text-neutralc-950">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+                                        fill="#0D0D0D" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 1.25C11.2919 1.25 10.6485 1.45282 9.95055 1.79224C9.27585 2.12035 8.49642 2.60409 7.52286 3.20832L5.45628 4.4909C4.53509 5.06261 3.79744 5.5204 3.2289 5.95581C2.64015 6.40669 2.18795 6.86589 1.86131 7.46263C1.53535 8.05812 1.38857 8.69174 1.31819 9.4407C1.24999 10.1665 1.24999 11.0541 1.25 12.1672V13.7799C1.24999 15.6837 1.24998 17.1866 1.4027 18.3616C1.55937 19.567 1.88856 20.5401 2.63236 21.3094C3.37958 22.0824 4.33046 22.4277 5.50761 22.5914C6.64849 22.75 8.10556 22.75 9.94185 22.75H14.0581C15.8944 22.75 17.3515 22.75 18.4924 22.5914C19.6695 22.4277 20.6204 22.0824 21.3676 21.3094C22.1114 20.5401 22.4406 19.567 22.5973 18.3616C22.75 17.1866 22.75 15.6838 22.75 13.7799V12.1672C22.75 11.0541 22.75 10.1665 22.6818 9.4407C22.6114 8.69174 22.4646 8.05812 22.1387 7.46263C21.8121 6.86589 21.3599 6.40669 20.7711 5.95581C20.2026 5.5204 19.4649 5.06262 18.5437 4.49091L16.4771 3.20831C15.5036 2.60409 14.7241 2.12034 14.0494 1.79224C13.3515 1.45282 12.7081 1.25 12 1.25ZM8.27953 4.50412C9.29529 3.87371 10.0095 3.43153 10.6065 3.1412C11.1882 2.85833 11.6002 2.75 12 2.75C12.3998 2.75 12.8118 2.85833 13.3935 3.14119C13.9905 3.43153 14.7047 3.87371 15.7205 4.50412L17.7205 5.74537C18.6813 6.34169 19.3559 6.76135 19.8591 7.1467C20.3487 7.52164 20.6303 7.83106 20.8229 8.18285C21.0162 8.53589 21.129 8.94865 21.1884 9.58104C21.2492 10.2286 21.25 11.0458 21.25 12.2039V13.725C21.25 15.6959 21.2485 17.1012 21.1098 18.1683C20.9736 19.2163 20.717 19.8244 20.2892 20.2669C19.8649 20.7058 19.2871 20.9664 18.2858 21.1057C17.2602 21.2483 15.9075 21.25 14 21.25H10C8.09247 21.25 6.73983 21.2483 5.71422 21.1057C4.71286 20.9664 4.13514 20.7058 3.71079 20.2669C3.28301 19.8244 3.02642 19.2163 2.89019 18.1683C2.75149 17.1012 2.75 15.6959 2.75 13.725V12.2039C2.75 11.0458 2.75076 10.2286 2.81161 9.58104C2.87103 8.94865 2.98385 8.53589 3.17709 8.18285C3.36965 7.83106 3.65133 7.52164 4.14092 7.1467C4.6441 6.76135 5.31869 6.34169 6.27953 5.74537L8.27953 4.50412Z"
+                                        fill="#0D0D0D" />
+                                </svg>
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="text-neutralc-400">/</li>
+                        <li><a href="" class="link-breadcrumb text-neutralc-950">Tin tức -
+                                Sự kiện</a></li>
+                        <li class="text-neutralc-400">/</li>
+                        <li><span class="link-breadcrumb text-neutralc-400">Chi tiết tin tức</span></li>
+                    </ul>
+                </div>
+                <div class="list-content lg:mt-[31px] flex items-start">
+                    <div class="link-social flex flex-col gap-4">
+                        <a href="" class="icon-social">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path
+                                    d="M1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13C25 19.6274 19.6274 25 13 25C6.37258 25 1 19.6274 1 13Z"
+                                    stroke="#141518" stroke-width="1.5" />
+                                <path
+                                    d="M14.3639 20.6972V13.575H16.3299L16.5904 11.1207H14.3639L14.3672 9.89227C14.3672 9.25215 14.428 8.90915 15.3474 8.90915H16.5765V6.45454H14.6102C12.2484 6.45454 11.417 7.64516 11.417 9.6474V11.121H9.94482V13.5753H11.417V20.6972H14.3639Z"
+                                    fill="#141518" />
+                            </svg>
+                        </a>
+                        <a href="" class="icon-copy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M10.0399 12.9601C11.4067 14.327 13.6228 14.327 14.9896 12.9601L18.5252 9.42459C19.892 8.05776 19.892 5.84168 18.5252 4.47484C17.1583 3.10801 14.9423 3.10801 13.5754 4.47484L11.8077 6.24261"
+                                    stroke="#141518" stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M12.8683 10.1316C11.5015 8.76478 9.28541 8.76478 7.91857 10.1316L4.38304 13.6671C3.0162 15.034 3.0162 17.2501 4.38304 18.6169C5.74987 19.9837 7.96595 19.9837 9.33278 18.6169L11.1006 16.8491"
+                                    stroke="#141518" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-center lg:max-w-[888px] lg:pl-[64px]">
+                        <h2 class="text-heading-h4-semibold text-[#141518]">Nghiên cứu và dự báo, tư vấn chính sách về
+                            phát triển nhân lực số</h2>
+                        <div class="date flex gap-4 items-center mt-4">
+                            <span class="text-body-md-regular text-neutralc-600 flex items-center gap-2">
+                                <img src="./assets/image/global/calendar.svg" alt="">
+                                16:00 20/10/2024
+                            </span>
+                            <span class="w-1 h-1 rounded-full bg-neutralc-200"></span>
+                            <span class="text-body-md-semibold text-neutralc-800">
+                                Hội thảo
+                            </span>
+                        </div>
+                        <div class="line my-6 h-[1px] bg-[#D1D5DB]"></div>
+                        <div
+                            class="short-desc text-body-lg-regular text-[#333] tracking-[-0.36px] border-l-2 border-solid border-primary pl-4 text-justify">
+                            Critical industrial metals dysprosium, terbium up double from April. Critical industrial
+                            metals dysprosium, terbium up double from April. Critical industrial metals dysprosium,
+                            terbium up double from April.
+                        </div>
+                        <!-- fill content -->
+                        <div class="text-body-lg-regular text-[#333]  content text-justify ">
+                            <img src="./assets/image/news/detail-1.png" alt="">
+                            WASHINGTON, June 6 (Reuters) - The Transportation Department paved the way for looser U.S
+                            fuel economy standards on Friday by declaring that former President Joe Biden's
+                            administration exceeded its authority by assuming high uptake of electric vehicles in
+                            calculating rules.
+                            The department made the declaration as it published a final "Resetting the Corporate Average
+                            Fuel Economy Program" (CAFE) rule. A future separate rule from the administration of
+                            President Donald Trump will revise the fuel economy requirements.
+
+                            "We are making vehicles more affordable and easier to manufacture in the United States. The
+                            previous administration illegally used CAFE standards as an electric vehicle mandate," said
+                            Transportation Secretary Sean Duffy in a statement.
+                            The department's National Highway Traffic Safety Administration (NHTSA), in writing its rule
+                            last year under Biden, had "assumed significant numbers of EVs would continue to be produced
+                            regardless of the standards set by the agency, in turn increasing the level of standards
+                            that could be considered maximum feasible," it said Friday.
+                            Duffy in January signed an order directing NHTSA to rescind fuel economy standards issued
+                            under Biden for the 2022-2031 model years that had aimed to drastically reduce fuel use for
+                            cars and trucks.
+                        </div>
+                        <!-- end -->
+                        <div class="line mt-[48px] my-6 h-[1px] bg-[#D1D5DB]"></div>
+                        <div class="flex gap-10 ">
+                            <div class="prev-post flex flex-col gap-2 max-w-[425px]">
+                                <a href="" class="link-primary text-body-md-bold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12C2.75 6.89137 6.89137 2.75 12 2.75ZM22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12ZM11.5303 8.46967C11.2374 8.17678 10.7626 8.17678 10.4697 8.46967L7.46967 11.4697C7.17678 11.7626 7.17678 12.2374 7.46967 12.5303L10.4697 15.5303C10.7626 15.8232 11.2374 15.8232 11.5303 15.5303C11.8232 15.2374 11.8232 14.7626 11.5303 14.4697L9.81066 12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H9.81066L11.5303 9.53033C11.8232 9.23744 11.8232 8.76256 11.5303 8.46967Z"
+                                            fill="#036799" />
+                                    </svg>
+                                    Bài viết trước
+                                </a>
+                                <a href="" class="text-body-lg-semibold link-underline ">Nghiên
+                                    cứu và dự báo, tư vấn chính sách về phát triển nhân lực số</a>
+                            </div>
+                            <div class="next-post flex flex-col gap-2 max-w-[425px] text-right">
+                                <a href="" class="link-primary text-body-md-bold ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                            fill="#036799" />
+                                    </svg>
+                                    Bài viết trước
+                                </a>
+                                <a href="" class="text-body-lg-semibold link-underline ">Nghiên
+                                    cứu và dự báo, tư vấn chính sách về phát triển nhân lực số</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box-most-views p-6 flex flex-col gap-6  border border-solid border-neutralc-100 rounded-lg ml-auto">
+                        <h5 class="text-body-lg-semibold text-neutralc-800">Tin tức xem nhiều nhất</h5>
+                        <div class="flex gap-5 items-start">
+                            <figure class="overflow-hidden rounded-sm">
+                                <img class="aspect-[111/72]" src="./assets/image/news/detail-small.png" alt="">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <a href="" class="link-primary">
+                                    <h3 class="text-body-md-semibold text-neutralc-800 max-w-[226px]">In these current
+                                        times, maintaining a strong immune system</h3>
+                                </a>
+                                <span class="text-body-sm-regular text-neutralc-600">16:00 20/10/2024</span>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-5 items-start">
+                            <figure class="overflow-hidden rounded-sm">
+                                <img class="aspect-[111/72]" src="./assets/image/news/detail-small.png" alt="">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <a href="" class="link-primary">
+                                    <h3 class="text-body-md-semibold text-neutralc-800 max-w-[226px]">In these current
+                                        times, maintaining a strong immune system</h3>
+                                </a>
+                                <span class="text-body-sm-regular text-neutralc-600">16:00 20/10/2024</span>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-5 items-start">
+                            <figure class="overflow-hidden rounded-sm">
+                                <img class="aspect-[111/72]" src="./assets/image/news/detail-small.png" alt="">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <a href="" class="link-primary">
+                                    <h3 class="text-body-md-semibold text-neutralc-800 max-w-[226px]">In these current
+                                        times, maintaining a strong immune system</h3>
+                                </a>
+                                <span class="text-body-sm-regular text-neutralc-600">16:00 20/10/2024</span>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-5 items-start">
+                            <figure class="overflow-hidden rounded-sm">
+                                <img class="aspect-[111/72]" src="./assets/image/news/detail-small.png" alt="">
+                            </figure>
+                            <div class="flex flex-col gap-2">
+                                <a href="" class="link-primary">
+                                    <h3 class="text-body-md-semibold text-neutralc-800 max-w-[226px]">In these current
+                                        times, maintaining a strong immune system</h3>
+                                </a>
+                                <span class="text-body-sm-regular text-neutralc-600">16:00 20/10/2024</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-2-news-detail lg:pt-[60px] lg:pb-[100px] ">
+            <div class="container">
+                <!-- list post -->
+                <h2 class="text-heading-h4-semibold text-[#141518]">
+                    Tin tức - Sự kiện liên quan </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5  lg:gap-y-[56px]  lg:gap-x-10 mt-8 lg:mt-14">
+                    <div class="flex flex-col overflow-hidden rounded-lg">
+                        <img class="aspect-[453/263]" src="/assets/image/news/small.png" alt="">
+                        <div class="box-post bg-[#EBF8FF] pl-8 p-5 flex flex-col gap-4">
+                            <div class="flex gap-3 items-center">
+                                <span class="text-body-lg-semibold text-neutralc-600">Hội thảo</span>
+                                <span class="w-1 h-1 bg-neutralc-300 rounded-full"></span>
+                                <span class="text-body-lg-semibold text-neutralc-600">20/10/2024</span>
+                            </div>
+                            <h3 class="text-heading-h10-bold text-neutralc-800">Nghiên cứu và dự báo, tư vấn chính
+                                sách
+                                về phát triển nhân lực số Nghiên cứu và dự báo,
+                                tư vấn chính sách về phát triển nhân lực số </h3>
+                            <a href="" class="text-body-md-bold link-primary w-fit">
+                                Chi tiết
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                        fill="#036799" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col overflow-hidden rounded-lg">
+                        <img class="aspect-[453/263]" src="/assets/image/news/small.png" alt="">
+                        <div class="box-post bg-[#EBF8FF] pl-8 p-5 flex flex-col gap-4">
+                            <div class="flex gap-3 items-center">
+                                <span class="text-body-lg-semibold text-neutralc-600">Hội thảo</span>
+                                <span class="w-1 h-1 bg-neutralc-300 rounded-full"></span>
+                                <span class="text-body-lg-semibold text-neutralc-600">20/10/2024</span>
+                            </div>
+                            <h3 class="text-heading-h10-bold text-neutralc-800">Nghiên cứu và dự báo, tư vấn chính
+                                sách
+                                về phát triển nhân lực số Nghiên cứu và dự báo,
+                                tư vấn chính sách về phát triển nhân lực số </h3>
+                            <a href="" class="text-body-md-bold link-primary w-fit">
+                                Chi tiết
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                        fill="#036799" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col overflow-hidden rounded-lg">
+                        <img class="aspect-[453/263]" src="/assets/image/news/small.png" alt="">
+                        <div class="box-post bg-[#EBF8FF] pl-8 p-5 flex flex-col gap-4">
+                            <div class="flex gap-3 items-center">
+                                <span class="text-body-lg-semibold text-neutralc-600">Hội thảo</span>
+                                <span class="w-1 h-1 bg-neutralc-300 rounded-full"></span>
+                                <span class="text-body-lg-semibold text-neutralc-600">20/10/2024</span>
+                            </div>
+                            <h3 class="text-heading-h10-bold text-neutralc-800">Nghiên cứu và dự báo, tư vấn chính
+                                sách
+                                về phát triển nhân lực số Nghiên cứu và dự báo,
+                                tư vấn chính sách về phát triển nhân lực số </h3>
+                            <a href="" class="text-body-md-bold link-primary w-fit">
+                                Chi tiết
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                        fill="#036799" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div
+            class="container w-full 2xl:max-w-[1740px] wrapper  px-5 pt-10 pb-6 lg:px-[92px] lg:pt-[64px] lg:pb-[24px]">
+            <div class="flex min-h-[272px] justify-between">
+                <!-- cols 1 -->
+                <div class="flex flex-col justify-between">
+                    <a href="" class="min-w-full">
+                        <img class="aspect-[338/92]" src="./assets/image/global/logo-header.svg" alt="">
+                    </a>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-body-lg-regular text-white">Cơ quan chủ quản:</span>
+                        <a href=""
+                            class="text-body-lg-semibold text-white underline underline-offset-4 link-footer flex items-center gap-2">
+                            <figure>
+                                <img class="aspect-[48/48]" src="./assets/image/global/icon-f.png" alt="">
+                            </figure>
+                            Hiệp hội Khoa học Hành chính Việt Nam
+                        </a>
+                    </div>
+                </div>
+                <!-- cols 2 -->
+                <div class="flex flex-col gap-6">
+                    <h5 class="title-f">thông tin liên hệ</h5>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">Trụ sở</span>
+                        <br>
+                        <a href="" class="text-heading-h10-regular text-white link-footer">684 Lạc Long Quân, phường
+                            Tây
+                            hồ, Hà
+                            Nội</a>
+                    </p>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">WEBSITE</span>
+                        <br>
+                        <a href="https://www.vidicc.com"
+                            class="text-heading-h10-regular text-white link-footer">www.vidicc.com</a>
+                    </p>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">EMAIL</span>
+                        <br>
+                        <a href="mailto:02423456789"
+                            class="text-heading-h10-regular text-white link-footer">02423456789</a>
+                    </p>
+                </div>
+                <!-- cols 3 -->
+                <div class="flex flex-col gap-6">
+                    <h5 class="title-f">Hỗ trợ khách hàng</h5>
+                    <div class="flex gap-7">
+                        <ul class="flex flex-col gap-3 min-w-[225px]">
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Về chúng tôi</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Tin tức -
+                                    Sự kiện</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Dịch vụ</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Đánh giá năng
+                                    lực số</a></li>
+                        </ul>
+
+                        <ul class="flex flex-col gap-3  min-w-[225px]">
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Khóa học</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Đội ngũ chuyên
+                                    gia</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Thư viện số</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- cols 4 -->
+                <div class="flex flex-col gap-6 items-end">
+                    <h5 class="title-f">Hỗ trợ khách hàng</h5>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="" class="text-body-lg-regular text-white link-footer">Hướng dẫn</a></li>
+                        <li><a href="" class="text-body-lg-regular text-white link-footer">Chính sách</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line w-full h-[1px] bg-white opacity-20 lg:mt-12"></div>
+            <div class="copyright">
+                <p class="text-body-lg-regular  text-center pt-[16px] text-white">2025 © Bản quyền thuộc về Trung
+                    tâm
+                    Phát triển Nhân lực số Việt Nam</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
