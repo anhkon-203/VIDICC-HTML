@@ -929,22 +929,22 @@ select:focus {
 }
 .input-label .input-field {
   display: flex;
-  padding: 14px 24px;
+  padding: 12px;
   align-items: flex-start;
   border: 1px solid transparent;
-  border-radius: 6px;
-  background: #f5f6f9;
+  border-radius: 8px;
+  background: #F2F3F5;
   width: 100%;
-  color: var(--neutralc-900);
+  color: #6B7280;
 }
 .input-label .input-field::-moz-placeholder {
-  color: var(--neutralc-600);
+  color: #9CA3AF;
 }
 .input-label .input-field::placeholder {
-  color: var(--neutralc-600);
+  color: #9CA3AF;
 }
 .input-label .input-field.border {
-  border: 1px solid var(--neutralc-200);
+  border: 1px solid #DEDFE0;
 }
 .input-label .input-field.transparent {
   padding: 0;

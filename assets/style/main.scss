@@ -650,19 +650,19 @@ select {
   .input-field {
     @extend .text-body-lg-regular;
     display: flex;
-    padding: 14px 24px;
+    padding: 12px;
     align-items: flex-start;
     // height: 56px;
     border: 1px solid transparent;
-    border-radius: 6px;
-    background: #f5f6f9;
+    border-radius: 8px;
+    background: #F2F3F5;
     width: 100%;
-    color: var(--neutralc-900);
+    color: #6B7280;
     &::placeholder {
-      color: var(--neutralc-600);
+      color: #9CA3AF;
     }
     &.border {
-      border: 1px solid var(--neutralc-200);
+      border: 1px solid #DEDFE0;
     }
     &.transparent {
       padding: 0;
