@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Event</title>
+    <!-- taildwind css import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/tailwind.config.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/main.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <!-- Header PC -->
+        <div class="header-pc header-fixed hidden 2xl:block">
+            <div class="wrapper flex justify-between items-center">
+                <a href="#" class="logo-header">
+                    <img src="./assets/image/global/logo-header.svg" alt="Logo">
+                </a>
+                <a href="#" class="logo-header-fixed">
+                    <img src="./assets/image/global/logo-header-fixed.svg" alt="Logo Fixed">
+                </a>
+
+                <nav class="py-[28px]">
+                    <ul class="flex gap-7 items-center menu-pc-ul">
+                        <li class="active"><a href="#" class="text-heading-h10-semibold text-white">Về chúng tôi</a>
+                        </li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Tin tức - Sự kiện</a></li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Dịch vụ</a></li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Đánh giá năng lực số</a></li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Khóa học</a></li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Đội ngũ chuyên gia</a></li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Thư viện số</a></li>
+                        <li><a href="#" class="text-heading-h10-semibold text-white">Liên hệ</a></li>
+
+                        <!-- Tìm kiếm -->
+                        <li class="cursor-pointer relative search-box-custom">
+                            <figure class="icon-find-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M22.5 22.5L18.4168 18.4167M21.3333 11.4167C21.3333 16.8935 16.8935 21.3333 11.4167 21.3333C5.93984 21.3333 1.5 16.8935 1.5 11.4167C1.5 5.93984 5.93984 1.5 11.4167 1.5C16.8935 1.5 21.3333 5.93984 21.3333 11.4167Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </figure>
+                            <input type="text" id="search-input" placeholder="Tìm kiếm..."
+                                class="search-input hidden absolute top-full right-0 mt-2 w-[220px] p-2 rounded-lg border border-gray-300 shadow-lg outline-none text-black">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Header Mobile -->
+        <div class="header-mobile 2xl:hidden fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+            <div class="flex justify-between items-center p-4">
+                <a href="#" class="logo-mobile">
+                    <img src="./assets/image/global/logo-header-fixed.svg" alt="Logo" class="h-8">
+                </a>
+                <div class="flex items-center gap-3">
+                    <!-- Icon tìm kiếm -->
+                    <figure class="icon-find-header-mobile cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22.5 22.5L18.4168 18.4167M21.3333 11.4167C21.3333 16.8935 16.8935 21.3333 11.4167 21.3333C5.93984 21.3333 1.5 16.8935 1.5 11.4167C1.5 5.93984 5.93984 1.5 11.4167 1.5C16.8935 1.5 21.3333 5.93984 21.3333 11.4167Z"
+                                stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </figure>
+
+                    <!-- Hamburger -->
+                    <div id="menu-toggle" class="cursor-pointer flex flex-col gap-[5px]">
+                        <span class="w-6 h-[2px] bg-black"></span>
+                        <span class="w-6 h-[2px] bg-black"></span>
+                        <span class="w-6 h-[2px] bg-black"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ô tìm kiếm Mobile -->
+            <div id="mobile-search" class="hidden bg-gray-100 p-3">
+                <input type="text" placeholder="Tìm kiếm..."
+                    class="w-full p-2 rounded-md border border-gray-300 outline-none">
+            </div>
+
+            <!-- Menu Mobile -->
+            <nav id="mobile-menu" class="hidden bg-white shadow-lg border-t">
+                <ul class="flex flex-col divide-y divide-gray-200 menu-mobile-ul">
+                    <li class="active"><a href="#" class="block p-3 text-heading-h10-semibold ">Về chúng tôi</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Tin tức - Sự kiện</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Dịch vụ</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Đánh giá năng lực số</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Khóa học</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Đội ngũ chuyên gia</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Thư viện số</a></li>
+                    <li><a href="#" class="block p-3 text-heading-h10-semibold ">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <style>
+        .section-banner-global {
+            background: url('./assets/image/global/banner.png') no-repeat center;
+        }
+    </style>
+    <main>
+        <section class="section-banner-global">
+            <div class="text-absolute absolute bottom-[4.3%] left-[14%] -translate-x-1/2 -translate-y-1/2 text-center">
+                <div class="flex flex-col items-start gap-6">
+                    <div class="breadcrumb-cus flex items-center gap-2 justify-center">
+                        <a href="" class="text-body-lg-regular text-white link-footer">
+                            <img src="./assets/image/global/home-icon.svg" alt="">
+                            Trang chủ
+                        </a>
+                        <span class="text-body-lg-regular text-white">/</span>
+                        <span class="text-body-lg-regular text-white">Về chúng tôi</span>
+                    </div>
+                    <h1 class="text-heading-h2-bold text-white ">Về chúng tôi</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-1-contact py-10 lg:pt-[80px] lg:pb-[100px]">
+            <div class="container">
+                <div class="flex justify-between flex-col lg:flex-row">
+                    <div class="flex flex-col gap-6 lg:min-w-[493px]">
+                        <div class="flex flex-col">
+                            <h4 class="text-body-lg-regular text-neutralc-900 uppercase opacity-60">TRỤ SỞ</h4>
+                            <p class="text-heading-h10-regular text-neutralc-900">
+                                684 Lạc Long Quân, phường Tây Hồ, Hà Nội
+                            </p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="text-body-lg-regular text-neutralc-900 uppercase opacity-60">TRỤ SỞ</h4>
+                            <p class="text-heading-h10-regular text-neutralc-900">
+                                684 Lạc Long Quân, phường Tây Hồ, Hà Nội
+                            </p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="text-body-lg-regular text-neutralc-900 uppercase opacity-60">TRỤ SỞ</h4>
+                            <p class="text-heading-h10-regular text-neutralc-900">
+                                684 Lạc Long Quân, phường Tây Hồ, Hà Nội
+                            </p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="text-body-lg-regular text-neutralc-900 uppercase opacity-60">TRỤ SỞ</h4>
+                            <p class="text-heading-h10-regular text-neutralc-900">
+                                684 Lạc Long Quân, phường Tây Hồ, Hà Nội
+                            </p>
+                        </div>
+                        <div class="line h-[1px] bg-[#E6E6E6]"></div>
+
+                        <div class="flex flex-col">
+                            <h4 class="text-heading-h10-semibold text-neutralc-800">Theo dõi chúng tôi</h4>
+                            <div class="flex gap-4 mt-4">
+                                <a href="" class="w-8 h-8">
+                                    <img src="./assets/image/global/fb.svg" alt="">
+                                </a>
+                                <a href="" class="w-8 h-8">
+                                    <img src="./assets/image/global/ig.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-contact">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.83376165980243!2d105.78535624389765!3d20.978996386030772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd2c0e21d7b%3A0xec2205f220faeb2!2zQ0dWIEjhu5MgR8awxqFtIFBsYXph!5e0!3m2!1svi!2s!4v1760085644523!5m2!1svi!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <style>
+            .box-form {
+                border-top: 4px solid var(--primary);
+                background: #FFF;
+                box-shadow: 0 4px 20px 0 rgba(161, 161, 161, 0.15);
+            }
+        </style>
+        <section class="contact-form pb-10 lg:pb-[100px]">
+            <div class="container">
+                <!-- form -->
+                <div class="box-form p-5 lg:p-10 flex flex-col w-full h-fit">
+                    <h4 class="text-heading-h8-bold text-[#373A51]">Liên hệ với chúng tôi</h4>
+                    <p class="text-body-md-regular text-neutralc-600 mt-2">
+                        Đội ngũ của chúng tôi sẵn sàng hỗ trợ bạn giải đáp mọi thắc mắc liên quan đến dịch vụ mà bạn
+                        quan tâm.
+                    </p>
+                    <form action="" class="flex flex-col mt-[23px] gap-5 items-start">
+                        <div class="flex flex-col lg:flex-row gap-5 w-full">
+                            <div class="input-label">
+                                <label class="input-title" for="">Họ và tên</label>
+                                <input type="text" placeholder="Nhập họ và tên" class="input-field border mt-2">
+                            </div>
+                            <div class="input-label">
+                                <label class="input-title" for="">Họ và tên</label>
+                                <input type="text" placeholder="Nhập họ và tên" class="input-field border mt-2">
+                            </div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row gap-5 w-full">
+                            <div class="input-label">
+                                <label class="input-title" for="">SDT <span class="require">*</span></label>
+                                <input type="text" placeholder="Nhập số điện thoại" class="input-field border mt-2">
+                            </div>
+                            <div class="input-label">
+                                <label class="input-title" for="">Họ và tên</label>
+                                <input type="text" placeholder="Nhập họ và tên" class="input-field border mt-2">
+                            </div>
+                        </div>
+                        <button class="button-cus-vidicc lg:mt-[28px]">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <style>
+        footer {
+            background: url('./assets/image/global/bg-footer.svg') no-repeat center;
+            background-size: cover;
+        }
+    </style>
+    <footer>
+        <div class="container w-full 2xl:max-w-[1740px] wrapper pt-10 pb-6 lg:pt-[64px] lg:pb-[24px]">
+            <div class="flex flex-col gap-10 lg:flex-row lg:justify-between min-h-[272px]">
+                <!-- cols 1 -->
+                <div class="flex flex-col justify-between gap-6 lg:gap-0">
+                    <a href="" class="min-w-full">
+                        <img class="aspect-[338/92] w-[200px] md:w-[260px]" src="./assets/image/global/logo-header.svg"
+                            alt="">
+                    </a>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-body-lg-regular text-white">Cơ quan chủ quản:</span>
+                        <a href=""
+                            class="text-body-lg-semibold text-white underline underline-offset-4 link-footer flex items-center gap-2">
+                            <figure>
+                                <img class="aspect-[48/48] w-6 md:w-10" src="./assets/image/global/icon-f.png" alt="">
+                            </figure>
+                            Hiệp hội Khoa học Hành chính Việt Nam
+                        </a>
+                    </div>
+                </div>
+
+                <!-- cols 2 -->
+                <div class="flex flex-col gap-6">
+                    <h5 class="title-f">thông tin liên hệ</h5>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">Trụ sở</span><br>
+                        <a href="" class="text-heading-h10-regular text-white link-footer">684 Lạc Long Quân, phường Tây
+                            hồ, Hà Nội</a>
+                    </p>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">WEBSITE</span><br>
+                        <a href="https://www.vidicc.com"
+                            class="text-heading-h10-regular text-white link-footer">www.vidicc.com</a>
+                    </p>
+                    <p>
+                        <span class="text-body-lg-regular text-white opacity-60 uppercase">EMAIL</span><br>
+                        <a href="mailto:02423456789"
+                            class="text-heading-h10-regular text-white link-footer">02423456789</a>
+                    </p>
+                </div>
+
+                <!-- cols 3 -->
+                <div class="flex flex-col gap-6">
+                    <h5 class="title-f">Hỗ trợ khách hàng</h5>
+                    <div class="flex flex-row gap-7">
+                        <ul class="flex flex-col gap-3 md:min-w-[180px]">
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Về chúng tôi</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Tin tức - Sự kiện</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Dịch vụ</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Đánh giá năng lực số</a>
+                            </li>
+                        </ul>
+
+                        <ul class="flex flex-col gap-3 md:min-w-[180px]">
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Khóa học</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Đội ngũ chuyên gia</a>
+                            </li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Thư viện số</a></li>
+                            <li><a href="" class="text-body-lg-regular text-white link-footer">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- cols 4 -->
+                <div class="flex flex-col gap-6 items-start lg:items-end">
+                    <h5 class="title-f">Chính sách & hỗ trợ</h5>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="" class="text-body-lg-regular text-white link-footer">Hướng dẫn</a></li>
+                        <li><a href="" class="text-body-lg-regular text-white link-footer">Chính sách</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="line w-full h-[1px] bg-white opacity-20 lg:mt-12 mt-8"></div>
+            <div class="copyright">
+                <p class="text-body-lg-regular text-center pt-[16px] text-white">
+                    2025 © Bản quyền thuộc về Trung tâm Phát triển Nhân lực số Việt Nam
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.icon-find-header').on('click', function (e) {
+                e.stopPropagation();
+                const input = $(this).siblings('.search-input');
+                if (input.hasClass('hidden')) {
+                    input.removeClass('hidden').hide().fadeIn(150).focus();
+                } else {
+                    input.fadeOut(150, function () { input.addClass('hidden'); });
+                }
+            });
+
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('.search-box-custom').length) {
+                    $('.search-input').fadeOut(150, function () { $(this).addClass('hidden'); });
+                }
+            });
+
+            $('.icon-find-header-mobile').on('click', function () {
+                $('#mobile-search').slideToggle(200);
+            });
+
+            $('#menu-toggle').on('click', function () {
+                $('#mobile-menu').slideToggle(250);
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
