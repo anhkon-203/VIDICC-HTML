@@ -655,14 +655,14 @@ select {
     // height: 56px;
     border: 1px solid transparent;
     border-radius: 8px;
-    background: #F2F3F5;
+    background: #f2f3f5;
     width: 100%;
-    color: #6B7280;
+    color: #6b7280;
     &::placeholder {
-      color: #9CA3AF;
+      color: #9ca3af;
     }
     &.border {
-      border: 1px solid #DEDFE0;
+      border: 1px solid #dedfe0;
     }
     &.transparent {
       padding: 0;
@@ -2556,6 +2556,25 @@ hr {
   }
 }
 
+.custom-point {
+  // them url icon tick truoc the li
+  @extend .text-body-md-regular;
+  li {
+    color: var(--neutralc-700);
+    position: relative;
+    padding-left: 12px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('/assets/image/global/icon-tick.svg');
+      width: 20px;
+      height: 20px;
+      left: -12px;
+      top: 2px;
+    }
+  }
+}
+
 //  end global --------------------------
 
 header {
@@ -2609,6 +2628,7 @@ header {
               background: var(--gradient-1);
               background-clip: text;
               -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
           }
         }
