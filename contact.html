@@ -246,7 +246,21 @@
         }
     </style>
     <footer>
-        <div class="container w-full 2xl:max-w-[1740px] wrapper pt-10 pb-6 lg:pt-[64px] lg:pb-[24px]">
+
+        <div class="fixed right-5 bottom-5  lg:top-[50vh] z-50 block">
+            <div class="list-item-fix gap-3 flex flex-col">
+                <a href="" class="item-fix flex  items-center ">
+                    <img src="./assets/image/global/zalo.svg" alt="">
+                </a>
+                <a href="" class="item-fix flex items-center  bg-gradient-fixed">
+                    <img src="./assets/image/global/phone.svg" alt="">
+                </a>
+                <button class="scroll-to-top">
+                    <img src="./assets/image/global/arrow-up.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="container w-full 2xl:max-w-[1740px] wrapper pt-10 pb-6 lg:pt-[64px] lg:pb-[24px] 3xl:px-[92px]">
             <div class="flex flex-col gap-10 lg:flex-row lg:justify-between min-h-[272px]">
                 <!-- cols 1 -->
                 <div class="flex flex-col justify-between gap-6 lg:gap-0">
@@ -354,6 +368,26 @@
             $('#menu-toggle').on('click', function () {
                 $('#mobile-menu').slideToggle(250);
                 $(this).toggleClass('active');
+            });
+
+            // Lấy phần tử nút
+            const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+            // Lắng nghe sự kiện cuộn trang
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+
+            // Khi click vào nút → cuộn lên đầu
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
         });
     </script>

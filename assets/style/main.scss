@@ -2575,6 +2575,54 @@ hr {
   }
 }
 
+.list-item-fix {
+  a,
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    background: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+    &.bg-gradient-fixed {
+      background: var(--gradient-1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 24px;
+        height: 24px;
+        path {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+  .scroll-to-top {
+    display: flex; /* luôn flex */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px) scale(0.96);
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+      visibility 0s linear 0.35s;
+  }
+
+  .scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+      visibility 0s;
+  }
+}
+
 //  end global --------------------------
 
 header {
@@ -2686,6 +2734,8 @@ header {
   }
 
   .header-mobile {
+    z-index: 999;
+
     .menu-mobile-ul {
       li {
         width: fit-content;

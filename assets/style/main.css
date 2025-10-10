@@ -2594,6 +2594,48 @@ hr.footer-divider {
   top: 2px;
 }
 
+.list-item-fix a,
+.list-item-fix button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+}
+.list-item-fix a.bg-gradient-fixed,
+.list-item-fix button.bg-gradient-fixed {
+  background: var(--gradient-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-item-fix a.bg-gradient-fixed svg,
+.list-item-fix button.bg-gradient-fixed svg {
+  width: 24px;
+  height: 24px;
+}
+.list-item-fix a.bg-gradient-fixed svg path,
+.list-item-fix button.bg-gradient-fixed svg path {
+  fill: var(--white);
+}
+.list-item-fix .scroll-to-top {
+  display: flex; /* luôn flex */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.96);
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), visibility 0s linear 0.35s;
+}
+.list-item-fix .scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), visibility 0s;
+}
+
 header .header-pc {
   position: absolute;
   top: 0;
@@ -2688,6 +2730,9 @@ header .header-pc .menu-pc-ul li a:hover {
 }
 header .header-pc .menu-pc-ul li.active a {
   color: var(--white);
+}
+header .header-mobile {
+  z-index: 999;
 }
 header .header-mobile .menu-mobile-ul li {
   width: -moz-fit-content;
